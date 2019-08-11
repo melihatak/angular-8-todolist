@@ -3,7 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>TODOLISTAPP</title>
-
+<style>
+	body{
+		background-image:url("/assets/img/todolist.jpg");
+        position: absolute; 
+        background-repeat: no-repeat;
+        background-size: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+         margin: 0;
+	}
+.col{
+       top: 50px;
+        bottom: 50px;
+        right: 50px;
+        left: 50px;
+         margin: 50px;
+}
+</style>
 </head>
 <body>
  <div class="container">
@@ -11,8 +30,10 @@
     <div class='row' *ngFor='let iconSet of seperateLines(icons)'>
 
       <!--  Component -->
-      <div class='col-m-2' *ngFor='let icon of iconSet'>
-          <fa-icon  [icon]="icon" style="font-size: 60px"></fa-icon>
+      <div class='col' *ngFor='let icon of iconSet'>
+          <fa-icon  [icon]="icon" style="font-size: 100px">
+          
+          </fa-icon>
       </div>
       <!-- Component -->
     </div>
